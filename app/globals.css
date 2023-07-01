@@ -2,26 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'MyFont';
+  src: url('/fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'MyFont', sans-serif;
+  background-color: black;
+  color: white;
+  @apply scroll-smooth;
+}
+
+section {
+  @apply w-full ml-auto mr-auto px-5 lg:px-40 xl:px-64 3xl:px-[23rem] my-10;
 }
