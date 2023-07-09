@@ -10,7 +10,7 @@
 body {
   font-family: 'MyFont', sans-serif;
   background-color: black;
-  color: white;
+  color: #d2d2d2;
   @apply scroll-smooth;
 }
 
