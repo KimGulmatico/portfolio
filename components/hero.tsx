@@ -94,7 +94,7 @@ const Hero = () => {
               </span>
             </div>
         </div>
-        <div className="flex-1 flex justify-center items-center md:justify-end">
+        <div className="flex-none flex justify-center items-center md:justify-end">
           <div className="border border-[#ffffff33] pt-10 3xl:scale-150">
             <Image
               src="/ASCII.png"
