@@ -1,3 +1,7 @@
+img, video {
+  all: unset;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
