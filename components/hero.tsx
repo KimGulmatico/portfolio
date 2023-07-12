@@ -80,13 +80,13 @@ const Hero = () => {
       <div className="flex flex-col-reverse xl:flex-row pt-16 xl:pt-0 xl:gap-10">
         <div ref={headingText} className="h-screen flex-1 flex flex-col justify-center">
             <div className="-mt-16 md:-mt-52 xl:mt-0">
-              <span className="text-7xl md:text-[100px] xl:md:text-[85px] 2xl:text-[100px] 3xl:text-[170px] font-bold uppercase h-[65px] md:h-[90px] 3xl:h-[140px] flex items-center overflow-hidden">
+              <span className="text-6xl md:text-[100px] xl:md:text-[85px] 2xl:text-[100px] 3xl:text-[170px] font-bold uppercase h-[65px] md:h-[90px] 3xl:h-[140px] flex items-center overflow-hidden">
                 Coding
               </span>
-              <span className="text-7xl md:text-[100px] xl:md:text-[85px] 2xl:text-[100px] 3xl:text-[170px] font-bold uppercase h-[65px] md:h-[90px] 3xl:h-[140px] flex items-center overflow-hidden">
+              <span className="text-6xl md:text-[100px] xl:md:text-[85px] 2xl:text-[100px] 3xl:text-[170px] font-bold uppercase h-[65px] md:h-[90px] 3xl:h-[140px] flex items-center overflow-hidden">
                 Wizardry
               </span>
-              <span className="text-4xl font-bold uppercase h-[100px] max-w-[500px] md:h-[90px] 3xl:h-[140px] flex gap-x-5 mt-10 items-center flex-wrap overflow-hidden">
+              <span className="text-4xl font-bold uppercase h-[130px] max-w-[500px] md:h-[90px] 3xl:h-[140px] flex  gap-x-2 md:gap-x-5 mt-10 items-center flex-wrap overflow-hidden">
                 <span>Turning</span><span>Coffee</span><span>Into</span><span>Software</span><span>Solutions</span> 
               </span>
             </div>

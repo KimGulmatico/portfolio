@@ -2,12 +2,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 
 interface BreakpointProps {
-  xs?: string;
-  sm?: string;
-  md?: string;
-  lg?: string;
-  xl?: string;
-  _2xl?: string;
+  xs?: any;
+  sm?: any;
+  md?: any;
+  lg?: any;
+  xl?: any;
+  _2xl?: any;
 }
 
 export const useBreakpoint = ({ xs, sm, md, lg, xl, _2xl }: BreakpointProps) => {
