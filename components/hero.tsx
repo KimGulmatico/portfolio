@@ -97,6 +97,8 @@ const Hero = () => {
         <div className="flex-none flex justify-center items-center md:justify-end">
           <div className="border border-[#ffffff33] pt-10 3xl:scale-150">
             <Image
+              priority
+              className="w-[500px]"
               src="/ASCII.png"
               alt="Picture of the author"
               width={500}
