@@ -1,21 +1,24 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { gsap } from "gsap";
-import Splitting from "splitting";
+
 import Loader from "@/components/loader";
-import ascii from "@/ascii";
-import { AsciiWrapper } from "@/ascii/wrapper";
 import Image from "next/image";
 
-gsap.registerPlugin(Splitting);
-
 const Hero = () => {
+  // check if window docment is defined
+  let Splitting:any;
+  if (typeof window !== "undefined") {
+    Splitting = require('splitting');
+    gsap.registerPlugin(Splitting);
+  }
+
   const headingText: any = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
   const canvaseRef = useRef(null);
 
   const startAnimation = () => {
-    if (headingText.current.children) {
+    if (headingText.current.children && Splitting) {
       const split: any = Splitting({ target: headingText.current });
       console.log(split);
 
