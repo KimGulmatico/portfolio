@@ -1,5 +1,6 @@
 img, video {
-  all: unset;
+  max-width: unset !important;
+  height: unset !important;
 }
 
 @tailwind base;
