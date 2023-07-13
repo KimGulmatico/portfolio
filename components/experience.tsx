@@ -82,7 +82,7 @@ const Experience = () => {
                 <h3 className="text-3xl md:text-4xl uppercase font-semibold mb-5 md:mb-28">
                   {data.title}
                 </h3>
-                <div className="border-[#333333] border flex justify-center items-center h-[180px] overflow-hidden md:h-[300px] md:overflow-auto">
+                <div className="border-[#333333] border flex justify-center items-center h-[180px] overflow-hidden md:h-[300px] md:overflow-auto px-10">
                   <Image
                     className="w-[270px] md:w-[400px]"
                     src={data.image}

@@ -95,14 +95,13 @@ const Hero = () => {
             </div>
         </div>
         <div className="flex-none flex justify-center items-center md:justify-end">
-          <div className="border border-[#ffffff33] pt-10 3xl:scale-150 h-[575px]">
+          <div className="border border-[#ffffff33] pt-10 3xl:scale-150">
             <Image
-              className="w-[500px] h-[533px]"
               priority
               src="/ASCII.png"
               alt="Picture of the author"
-              width="500"
-              height="533"
+              width={500}
+              height={533}
             />
           </div>
         </div>
