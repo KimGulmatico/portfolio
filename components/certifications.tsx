@@ -46,7 +46,7 @@ const Certifications = () => {
             <a href="https://drive.google.com/file/d/1iW1L7WXBMC8vw_D6BVFvsATSJ839mijr/view" target="_blank" rel="noopener noreferrer" className="border-[#333333] border w-full aspect-square bg-black box p-5 md:p-12 flex flex-col justify-between relative">
               <span className="text-7xl font-semibold">01</span>
               <span className="text-3xl font-semibold uppercase">Coding tournament</span>
-              <Image src="/code.png" width={500} height={500} alt="code" className="absolute w-full -m-3 md:-m-12 p-3 md:p-10 object-contain h-full opacity-80" />
+              <Image priority src="/code.png" width={500} height={500} alt="code" className="absolute w-full -m-3 md:-m-12 p-3 md:p-10 object-contain h-full opacity-80" />
             </a>
           </div>
           <div className="mt-[50px] 3xl:mt-[100px] -ml-[100%] md:-ml-[30%] 2xl:-ml-[20%] flex-1">
@@ -54,7 +54,7 @@ const Certifications = () => {
               <a href="https://web.archive.org/web/20180821061921/https://www.proxor.com/examTaker/certification/id/4536?trk=profile_certification_title" target="_blank" rel="noopener noreferrer" className="border-[#333333] border w-full aspect-square bg-black box p-5 md:p-12 flex flex-col justify-between relative">
                 <span className="text-7xl font-semibold">02</span>
                 <span className="text-3xl font-semibold uppercase">Proxor 1 certification</span>
-                <Image src="/proxor-cert.png" width={500} height={500} alt="code" className="absolute w-full -m-3 md:-m-12 p-3 md:p-10 object-contain h-full opacity-80" />
+                <Image priority src="/proxor-cert.png" width={500} height={500} alt="code" className="absolute w-full -m-3 md:-m-12 p-3 md:p-10 object-contain h-full opacity-80" />
               </a>
             </div>
           </div>
@@ -63,7 +63,7 @@ const Certifications = () => {
               <a href="https://blockchaincertificate-verify.kingsland.io/certificate/5f2222e2d2b2ab0e404b9c69" target="_blank" rel="noopener noreferrer" className="border-[#333333] border w-full aspect-square bg-black box p-5 md:p-12 flex flex-col justify-between relative">
                 <span className="text-7xl font-semibold">03</span>
                 <span className="text-3xl font-semibold uppercase">Blockchain Training</span>
-                <Image src="/block.png" width={500} height={500} alt="code" className="absolute w-full -m-3 md:-m-12 p-3 md:p-10 object-contain h-full opacity-80" />
+                <Image priority src="/block.png" width={500} height={500} alt="code" className="absolute w-full -m-3 md:-m-12 p-3 md:p-10 object-contain h-full opacity-80" />
               </a>
             </div>
           </div>
@@ -72,7 +72,7 @@ const Certifications = () => {
               <a href="https://blockchaincertificate-verify.kingsland.io/certificate/630f63341918c47cc68c5f82" target="_blank" rel="noopener noreferrer" className="border-[#333333] border w-full aspect-square bg-black box p-5 md:p-12 flex flex-col justify-between relative">
                 <span className="text-7xl font-semibold">04</span>
                 <span className="text-3xl font-semibold uppercase">Cybersecurity</span>
-                <Image src="/cybersecurity.png" width={500} height={500} alt="code" className="absolute w-full -m-3 md:-m-12 p-3 md:p-10 object-contain h-full  opacity-80" />
+                <Image priority src="/cybersecurity.png" width={500} height={500} alt="code" className="absolute w-full -m-3 md:-m-12 p-3 md:p-10 object-contain h-full  opacity-80" />
               </a>
             </div>
           </div>
