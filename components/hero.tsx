@@ -98,7 +98,7 @@ const Hero = () => {
           <div className="border border-[#ffffff33] pt-10 3xl:scale-150">
             <Image
               priority
-              src="/ASCII.png"
+              src="/ASCII.webp"
               alt="Picture of the author"
               width={500}
               height={533}
