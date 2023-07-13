@@ -101,7 +101,7 @@ const Hero = () => {
               src="/ASCII.png"
               alt="Picture of the author"
               width="500"
-              height="1000"
+              height="533.79"
             />
           </div>
         </div>
