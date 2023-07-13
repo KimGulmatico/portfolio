@@ -100,7 +100,7 @@ const Skills = () => {
           {
             (isSm?skillsSm[0]:skills[0]).map(skill => (
               <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[480px] 3xl:w-[900px] flex justify-center items-centers">
-                <Image src={skill.src} alt={skill.name} width="150" height="150"/>
+                <Image priority src={skill.src} alt={skill.name} width="150" height="150"/>
               </div>
             ))
           }
@@ -109,7 +109,7 @@ const Skills = () => {
           {
             (isSm?skillsSm[1]:skills[0]).map(skill => (
               <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[480px] 3xl:w-[900px] flex justify-center items-center">
-                <Image src={skill.src} alt="redux" width="150" height="150" className="object-contain"/>
+                <Image priority src={skill.src} alt="redux" width="150" height="150" className="object-contain"/>
               </div>
             ))
           }
@@ -118,7 +118,7 @@ const Skills = () => {
           {
             skillsSm[2].map(skill => (
               <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[480px] 3xl:w-[900px] flex justify-center items-centers">
-                <Image src={skill.src} alt={skill.name} width="150" height="150"/>
+                <Image priority src={skill.src} alt={skill.name} width="150" height="150"/>
               </div>
             ))
           }
