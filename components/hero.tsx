@@ -80,22 +80,22 @@ const Hero = () => {
   return (
     <>
       <Loader onLoadComplete={onLoadComplete} />
-      <div className="flex flex-col-reverse xl:flex-row pt-16 xl:pt-0 xl:gap-10">
+      <div className="flex flex-col-reverse xl:flex-row pt-16 xl:pt-0 gap-0 2xl:gap-10">
         <div ref={headingText} className="h-screen flex-1 flex flex-col justify-center">
-            <div className="-mt-16 md:-mt-52 xl:mt-0">
-              <span className="text-6xl md:text-[100px] xl:md:text-[85px] 2xl:text-[100px] 3xl:text-[170px] font-bold uppercase h-[65px] md:h-[90px] 3xl:h-[140px] flex items-center overflow-hidden">
+            <div className="-mt-16 md:-mt-52 xl:mt-0 w-auto xl:w-[410px] 2xl:w-auto">
+              <span className="text-[55px] md:text-[100px] xl:text-[75px] 2xl:text-[100px] 3xl:text-[100px] 4xl:text-[120px] 5xl:text-[140px] font-bold uppercase h-[65px] md:h-[90px] 3xl:h-[120px] 4xl:h-[140px] flex items-center overflow-hidden">
                 Coding
               </span>
-              <span className="text-6xl md:text-[100px] xl:md:text-[85px] 2xl:text-[100px] 3xl:text-[170px] font-bold uppercase h-[65px] md:h-[90px] 3xl:h-[140px] flex items-center overflow-hidden">
+              <span className="text-[55px] md:text-[100px] xl:text-[75px] 2xl:text-[100px] 3xl:text-[100px] 4xl:text-[120px] 5xl:text-[140px] font-bold uppercase h-[65px] md:h-[90px] 3xl:h-[120px] 4xl:h-[140px] flex items-center overflow-hidden">
                 Wizardry
               </span>
-              <span className="text-4xl font-bold uppercase h-[130px] max-w-[500px] md:h-[90px] 3xl:h-[140px] flex  gap-x-2 md:gap-x-5 mt-10 items-center flex-wrap overflow-hidden">
+              <span className="text-4xl 5xl:text-5xl font-bold uppercase h-[130px] max-w-[500px] md:h-[90px] xl:h-[115px] 3xl:h-[120px] 4xl:h-[120px] 5xl:h-[150px] flex gap-x-2 md:gap-x-5 mt-10 items-center flex-wrap overflow-hidden">
                 <span>Turning</span><span>Coffee</span><span>Into</span><span>Software</span><span>Solutions</span> 
               </span>
             </div>
         </div>
         <div className="flex-none flex justify-center items-center md:justify-end">
-          <div className="border border-[#ffffff33] pt-10 3xl:scale-150">
+          <div className="border border-[#ffffff33] pt-10 xl:scale-90 2xl:scale-100 3xl:scale-100 4xl:scale-125 5xl:scale-150">
             <Image
               priority
               src="/ASCII.webp"

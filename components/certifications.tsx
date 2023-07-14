@@ -40,8 +40,8 @@ const Certifications = () => {
       <span className="text-base uppercase tracking-widest font-medium absolute top-3 lg:top-9 2xl:top-3">
         certifications
       </span>
-      <div className="-mx-5 lg:-mx-40 xl:-mx-64 3xl:-mx-[23rem] h-screen w-screen overflow-hidden">
-        <div className="mx-5 lg:mx-40 xl:mx-64 3xl:mx-[23rem] bg-black flex h-full">
+      <div className="-mx-5 lg:-mx-40 2xl:-mx-64 3xl:-mx-[23rem] h-screen w-screen overflow-hidden">
+        <div className="mx-5 lg:mx-40 2xl:mx-64 3xl:mx-[23rem] bg-black flex h-full">
           <div className="flex-1">
             <a href="https://drive.google.com/file/d/1iW1L7WXBMC8vw_D6BVFvsATSJ839mijr/view" target="_blank" rel="noopener noreferrer" className="border-[#333333] border w-full aspect-square bg-black box p-5 md:p-12 flex flex-col justify-between relative">
               <span className="text-7xl font-semibold">01</span>

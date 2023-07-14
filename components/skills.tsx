@@ -95,29 +95,29 @@ const Skills = () => {
   return (
     <div id="skills" className="py-20 flex flex-col relative">
       <span className="text-base uppercase tracking-widest font-medium absolute top-3 lg:top-9 2xl:top-3">technology stack</span>
-      <div className="-mx-5 lg:-mx-40 xl:-mx-64 3xl:-mx-[23rem] h-screen w-screen flex flex-col gap-5 overflow-hidden">
-        <div className="border-[#333333] flex gap-5 rect1 -translate-x-[100vw] w-min self-end">
+      <div className="-mx-5 lg:-mx-40 2xl:-mx-64 3xl:-mx-[23rem] h-screen w-screen flex flex-col gap-5 3xl:gap-10 overflow-hidden">
+        <div className="border-[#333333] flex gap-5 3xl:gap-10 rect1 -translate-x-[100vw] w-min self-end">
           {
             (isSm?skillsSm[0]:skills[0]).map(skill => (
-              <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[480px] 3xl:w-[900px] flex justify-center items-centers">
+              <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[430px] 3xl:w-[560px] 4xl:w-[650px] 5xl:w-[700px] flex justify-center items-centers">
                 <Image priority src={skill.src} alt={skill.name} width="150" height="150"/>
               </div>
             ))
           }
         </div>
-        <div className="border-[#333333] flex gap-5 rect2  translate-x-[100vw] w-min">
+        <div className="border-[#333333] flex gap-5 3xl:gap-10 rect2  translate-x-[100vw] w-min">
           {
-            (isSm?skillsSm[1]:skills[0]).map(skill => (
-              <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[480px] 3xl:w-[900px] flex justify-center items-center">
+            (isSm?skillsSm[1]:skills[1]).map(skill => (
+              <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[430px] 3xl:w-[560px] 4xl:w-[650px] 5xl:w-[700px] flex justify-center items-center">
                 <Image priority src={skill.src} alt="redux" width="150" height="150" className="object-contain"/>
               </div>
             ))
           }
         </div>
-        {isSm && <div className="border-[#333333] flex gap-5 rect1 -translate-x-[100vw] w-min self-end">
+        {isSm && <div className="border-[#333333] flex gap-5 3xl:gap-10 rect1 -translate-x-[100vw] w-min self-end">
           {
             skillsSm[2].map(skill => (
-              <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[480px] 3xl:w-[900px] flex justify-center items-centers">
+              <div key={skill.name} className="border-[#333333] border aspect-video flex-none w-[300px] md:w-[430px] xl:w-[430px] 3xl:w-[560px] 4xl:w-[650px] 5xl:w-[700px] flex justify-center items-centers">
                 <Image priority src={skill.src} alt={skill.name} width="150" height="150"/>
               </div>
             ))

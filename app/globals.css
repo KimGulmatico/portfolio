@@ -15,5 +15,5 @@ body {
 }
 
 section {
-  @apply w-full ml-auto mr-auto px-5 lg:px-40 xl:px-64 3xl:px-[23rem] my-10;
+  @apply w-full ml-auto mr-auto px-5 lg:px-40 2xl:px-64 3xl:px-[23rem] my-10;
 }

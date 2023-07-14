@@ -58,33 +58,33 @@ const Experience = () => {
   return (
     <div className="py-20 sticky top-0">
       {exp.map((data, i) => (
-        <div key={`exp${i}`} className="border-[#333333] border-t -mx-5 lg:-mx-40 xl:-mx-64 3xl:-mx-[23rem] h-screen exp sticky top-[155px] lg:top-[105px] 2xl:top-[155px]">
-          <div className="mx-5 lg:mx-40 xl:mx-64 3xl:mx-[23rem] bg-black relative h-full">
+        <div key={`exp${i}`} className="border-[#333333] border-t -mx-5 lg:-mx-40 2xl:-mx-64 3xl:-mx-[23rem] h-screen exp sticky top-[155px] lg:top-[105px] 2xl:top-[155px]">
+          <div className="mx-5 lg:mx-40 2xl:mx-64 3xl:mx-[23rem] bg-black relative h-full">
             {i == 0 && <span className="text-base text uppercase absolute -top-[70px] lg:-top-[45px] 2xl:-top-[70px] tracking-widest font-medium">
               work history
             </span>}
             <div className="flex gap-5 md:gap-20 max-h-min py-10 flex-col-reverse md:flex-row">
               <div className="flex-1 flex flex-col justify-between gap-5">
-                <h3 className="text-2xl md:text-4xl uppercase font-semibold">
+                <h3 className="text-2xl md:text-4xl 5xl:text-5xl uppercase font-semibold">
                   {data.date}
                 </h3>
-                <div className="flex flex-col gap-5">
-                  <span className="text-sm tracking-widest font-semibold uppercase">
+                <div className="flex flex-col gap-5 xl:gap-8 5xl:gap-10">
+                  <span className="text-sm 5xl:text-lg tracking-widest font-semibold uppercase">
                     {data.location}
                   </span>
-                  <p className="text-lg">{data.description}</p>
-                  <a href={data.link} target="_blank" rel="noopener noreferrer" className="px-10 py-2 text-xl border bg-[#d2d2d2] text-black w-min">
+                  <p className="text-lg 3xl:text-xl 5xl:text-2xl">{data.description}</p>
+                  <a href={data.link} target="_blank" rel="noopener noreferrer" className="px-10 5xl:px-20 py-2 5xl:py-5 text-xl border bg-[#d2d2d2] text-black w-min">
                     Explore
                   </a>
                 </div>
               </div>
               <div className="flex-1 flex-col">
-                <h3 className="text-3xl md:text-4xl uppercase font-semibold mb-5 md:mb-28">
+                <h3 className="text-3xl md:text-4xl 5xl:text-5xl uppercase font-semibold mb-5 md:mb-28 3xl:mb-40 5xl:mb-56">
                   {data.title}
                 </h3>
-                <div className="border-[#333333] border flex justify-center items-center h-[180px] overflow-hidden md:h-[300px] md:overflow-auto px-10">
+                <div className="border-[#333333] border flex justify-center items-center h-[180px] 3xl:h-[380px] 5xl:h-[400px] overflow-hidden md:h-[300px] md:overflow-auto px-10">
                   <Image
-                    className="w-[270px] md:w-[400px]"
+                    className="w-[270px] md:w-[400px] 5xl:w-[500px]"
                     src={data.image}
                     alt={data.image}
                     width={400}
