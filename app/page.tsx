@@ -4,13 +4,17 @@ import Hero from "@/components/hero";
 import Experience from "@/components/experience";
 import Certifications from "@/components/certifications";
 import Skills from "@/components/skills";
+import Spotlight from "@/components/spotlight";
+import { TextGenerateEffect } from "@/components/TextGenerateEffect";
 
 export default function Home() {
   return (
     <>
       <Nav />
       <main>
-        <section id="home">
+        <section
+          id="home"
+        >
           <Hero />
         </section>
         <section id="about">
@@ -18,9 +22,10 @@ export default function Home() {
             <span className="text-base uppercase tracking-widest font-medium">
               about me
             </span>
-            <span className="text-3xl md:text-5xl font-[600]">
-              I am a Software Developer who specializes in Web Development, I have gained experience working with international companies and talented developers over the years and strive to meet client needs.
-            </span>
+            <TextGenerateEffect
+              // className="text-3xl md:text-5xl font-[600]"
+              words="I am a Software Developer who specializes in Web Development, I have gained experience working with international companies and talented developers over the years and strive to meet client needs."
+            />
           </div>
         </section>
         <section id="experience">
@@ -38,11 +43,18 @@ export default function Home() {
               contact
             </span>
             <span className="text-3xl md:text-5xl font-[600]">
-              Thank you for visiting. Let&apos;s build something amazing together!
+              Thank you for visiting. Let&apos;s build something amazing
+              together!
             </span>
             <div className="flex gap-5 mt-20 text-2xl md:text-3xl font-[600] uppercase">
               <a href="mailto:gulmaticokim@protonmail.com">Email</a> ||
-              <a href="https://www.linkedin.com/in/kim-benedict-gulmatico-29742214b/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              <a
+                href="https://www.linkedin.com/in/kim-benedict-gulmatico-29742214b/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Linkedin
+              </a>
             </div>
           </div>
         </section>

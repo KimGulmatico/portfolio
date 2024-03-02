@@ -1,9 +1,11 @@
 "use client";
-import { useRef, useState } from "react";
+import { use, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 import Loader from "@/components/loader";
 import Image from "next/image";
+import Spotlight from "./spotlight";
+import { EvervaultCard } from "./EveraultCard";
 
 const Hero = () => {
   // check if window docment is defined
@@ -77,9 +79,14 @@ const Hero = () => {
     }, 300);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Loader onLoadComplete={onLoadComplete} />
+      {!isLoading && <Spotlight className="" fill="white"/>}
       <div className="flex flex-col-reverse xl:flex-row pt-16 xl:pt-0 gap-0 2xl:gap-10">
         <div ref={headingText} className="h-screen flex-1 flex flex-col justify-center">
             <div className="-mt-16 md:-mt-52 xl:mt-0 w-auto xl:w-[410px] 2xl:w-auto">
@@ -95,14 +102,14 @@ const Hero = () => {
             </div>
         </div>
         <div className="flex-none flex justify-center items-center md:justify-end">
-          <div className="border border-[#ffffff33] pt-10 xl:scale-90 2xl:scale-100 3xl:scale-100 4xl:scale-125 5xl:scale-150">
+          <div className="border border-[#ffffff33] pt-10 xl:scale-90 2xl:scale-100 3xl:scale-100 4xl:scale-125 5xl:scale-150 relative">
             <Image
-              priority
-              src="/ASCII.webp"
-              alt="Picture of the author"
-              width={500}
-              height={533}
-            />
+                priority
+                src="/ASCII.webp"
+                alt="Picture of the author"
+                width={500}
+                height={533}
+              />
           </div>
         </div>
       </div>
