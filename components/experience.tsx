@@ -61,26 +61,26 @@ const Experience = () => {
             </span>}
             <div className="flex gap-5 md:gap-20 max-h-min py-10 flex-col-reverse md:flex-row">
               <div className="flex-1 flex flex-col justify-between gap-5">
-                <h3 className="text-2xl md:text-4xl 5xl:text-5xl uppercase font-semibold">
+                <h3 className="text-xl md:text-4xl 5xl:text-5xl uppercase font-semibold">
                   {data.date}
                 </h3>
                 <div className="flex flex-col gap-5 xl:gap-8 5xl:gap-10">
                   <span className="text-sm 5xl:text-lg tracking-widest font-semibold uppercase">
                     {data.location}
                   </span>
-                  <p className="text-lg 3xl:text-xl 5xl:text-2xl">{data.description}</p>
+                  <p className="text-base 3xl:text-xl 5xl:text-2xl">{data.description}</p>
                   <a href={data.link} target="_blank" rel="noopener noreferrer" className="px-10 5xl:px-20 py-2 5xl:py-5 text-xl border bg-[#d2d2d2] text-black w-min">
                     Explore
                   </a>
                 </div>
               </div>
               <div className="flex-1 flex-col">
-                <h3 className="text-3xl md:text-4xl 5xl:text-5xl uppercase font-semibold mb-5 md:mb-28 3xl:mb-40 5xl:mb-56">
+                <h3 className="text-2xl md:text-4xl 5xl:text-5xl uppercase font-semibold mb-3 md:mb-28 3xl:mb-40 5xl:mb-56">
                   {data.title}
                 </h3>
                 <div className="border-[#333333] border flex justify-center items-center h-[180px] 3xl:h-[380px] 5xl:h-[400px] overflow-hidden md:h-[300px] md:overflow-auto px-10">
                   <Image
-                    className="w-[270px] md:w-[400px] 5xl:w-[500px]"
+                    className="w-[250px] md:w-[400px] 5xl:w-[500px]"
                     src={data.image}
                     alt={data.image}
                     width={400}

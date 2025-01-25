@@ -60,7 +60,7 @@ const Loader = ({onLoadComplete}:LoaderProps) => {
       id="loading"
       className={cx(
         `bg-[#d2d2d2] text-black flex items-center
-        justify-center fixed overflow-hidden z-[999]
+        justify-center !fixed overflow-hidden z-[999999]
         text-3xl`,
         {
           "h-screen w-screen top-0 left-0": !ready,
