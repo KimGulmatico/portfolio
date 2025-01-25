@@ -84,7 +84,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <>
+    <div className="relative">
       <Loader onLoadComplete={onLoadComplete} />
       {!isLoading && <Spotlight className="" fill="white"/>}
       <div className="flex flex-col-reverse xl:flex-row pt-16 xl:pt-0 gap-0 2xl:gap-10">
@@ -117,7 +117,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
