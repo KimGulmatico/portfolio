@@ -35,7 +35,7 @@ export const TextGenerateEffect = ({
               whileInView={{ opacity: 1 }}
               transition={{ duration: 2, delay: (idx / 2) * 0.2}}
               key={word + idx}
-              className="dark:text-white text-black opacity-0"
+              className="text-white/80 opacity-0"
               style={{ textShadow: '0px 1px 100px rgba(255,255,255,0.70);' }}
             >
               {word}{" "}
@@ -49,7 +49,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className=" dark:text-white text-black text-3xl md:text-5xl font-[600] leading-snug tracking-wide">
+        <div className="text-white text-3xl md:text-5xl font-[600] leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>
