@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
-import { useBreakpoint } from "@/hooks/useBreakpoint";
 import cx from "classnames";
 
 interface LoaderProps {
@@ -13,7 +12,7 @@ const Loader = ({onLoadComplete}:LoaderProps) => {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    gsap.set("#loading", {
+    const tl = gsap.set("#loading", {
       height: '100vh',
       width: '100vw',
       top: 0,
@@ -21,14 +20,18 @@ const Loader = ({onLoadComplete}:LoaderProps) => {
       borderRadius: 0,
     })
     setReady(true);
+
+    return () => {
+      tl.kill();
+    }
   }, [])
 
   useEffect(() => {
+    const tl = gsap.timeline();
     setTimeout(() => {
       if (percentage < 100) {
         setPercentage(percentage + 1);
       } else {
-        const tl = gsap.timeline();
         gsap.set("#loading", {
           clearProps: "all",
         })
@@ -46,7 +49,11 @@ const Loader = ({onLoadComplete}:LoaderProps) => {
       }
     }, 10);
 
-  }, [percentage]);
+    return () => {
+      tl.kill();
+    }
+
+  }, [onLoadComplete, percentage]);
 
   return (
     <div

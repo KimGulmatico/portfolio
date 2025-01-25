@@ -33,6 +33,10 @@ const Certifications = () => {
     document.querySelectorAll(".box").forEach((box) => {
       tl.from(box, { y: "120vh", x: "120vw" });
     });
+
+    return () => {
+      tl.kill();
+    };
   }, [offset]);
 
   return (

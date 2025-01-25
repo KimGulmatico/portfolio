@@ -1,14 +1,10 @@
 "use client";
 
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const exp = [
   {
-    title: "Junior Software Eng.",
+    title: "Jr. Software Eng.",
     date: "May 2018 - May 2021",
     location: "Iloilo City, Philippines",
     description: "As a coding tournament winner hired by the company during college, I was a pioneer and gained professional experience working on international and external projects while also learning modern stacks like React and Node.js.",
@@ -17,7 +13,7 @@ const exp = [
     link: "https://stacktrek.com/",
   },
   {
-    title: "Senior Software Eng.",
+    title: "Sr. Software Eng.",
     date: "Jun 2021 - Apr 2023",
     location: "Atlanta United States",
     description: "As a pioneer of the company, I worked as a full stack developer on both internal and international client projects, and was given the opportunity to grow through a scholarship for Kingsland's blockchain and cybersecurity certifications.",
@@ -26,7 +22,7 @@ const exp = [
     link: "https://www.kingsland.io/",
   },
   {
-    title: "Part Time - Full Stack",
+    title: "PT - Full Stack",
     date: "Oct 2022 - Jan 2023",
     location: "Iloilo City, Philippines",
     description: "As a developer for a restaurant app, I worked on both mobile and web platforms, building new features, optimizing code, updating the UI, managing their AWS EC2 instance and RDS, and implementing Detox, an end-to-end testing library for their React Native app.",
@@ -35,7 +31,7 @@ const exp = [
     link: "https://savoriteapp.com/",
   },
   {
-    title: "Part Time Full Stack",
+    title: "PT - Full Stack",
     date: "Oct 2022 - Feb 2023",
     location: "Cardiff, UK",
     description: "As a Senior Frontend developer at a UK travel technology company, I worked on two major client projects, gained valuable experience on the differences between big software companies and startups, and honed my skills by working on challenging legacy projects.",
@@ -44,7 +40,7 @@ const exp = [
     link: "https://inspiretec.com/",
   },
   {
-    title: "Senior Frontend Eng.",
+    title: "Sr. Frontend Eng.",
     date: "Mar 2023 - Present",
     location: "Melbourne, Australia",
     description: "As a Senior Frontend Developer at FMClarity, I have the exciting task of improving the existing codebase of FM and creating a brand new Next.js application as version 2.0. Working in the field of facility management is a fresh and invigorating challenge for me. I am focused on enhancing user experiences and bringing innovation to the industry through my technical expertise.",

@@ -88,9 +88,11 @@ const Skills = () => {
     tl.to('.rect1', { x: width, });
     tl.to('.rect2', { x: -width }, 0);
 
-  }, [offset]);
+    return () => {
+      tl.kill();
+    }
 
-  useEffect(() => { console.log(isSm,'sm') }, [isSm]);
+  }, [offset]);
 
   return (
     <div id="skills" className="py-20 flex flex-col relative">
