@@ -25,5 +25,48 @@ export default async function Page() {
 
   const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
 
-  return randomSentence;
+  return (
+    <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="A showcase of my work, skills, and achievements in coding and design." />
+        <title>My Portfolio</title>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "My Portfolio",
+            "description": "Explore my projects, skills, and achievements in coding and design.",
+            "author": {
+              "@type": "Person",
+              "name": "Your Name",
+            },
+            "datePublished": new Date().toISOString(),
+            "image": "https://example.com/images/portfolio.jpg",
+          })}
+        </script>
+      </head>
+      <body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+          <h1>Welcome to My Portfolio</h1>
+        </header>
+        <main id="main-content">
+          <article className="portfolio-intro">
+            <p>{randomSentence}</p>
+          </article>
+        </main>
+        <footer>
+          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        </footer>
+      </body>
+    </html>
+  );
 }
